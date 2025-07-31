@@ -5,14 +5,27 @@ This project is designed to set up a database named **Customer_Purchase_Analysis
 ## Project Structure
 
 ```
-customer-purchase-analysis-sql
-├── src
-│   ├── create-database.sql
-│   ├── tables
-│   │   └── create-tables.sql
-│   ├── data-import
-│   │   └── import-purchase-history.sql
-├── README.md
+customer purchase analysis/
+├── Customer Purchase  Analysis.xlxs
+├── Clean Files/
+│ ├── Cleaned_Browsing_History.xlsx
+│ ├── Cleaned_Product_Reviews.xlsx
+│ └── Cleaned_Purchase_History.xlsx
+├── Customer Purchase  Analysis.twb
+├── Cleaned_Browsing_History.csv
+├── Cleaned_Product_Reviews.csv
+├── Cleaned_Purchase_History.csv
+├── CustomerData.csv
+├── SQL Files/
+|  ├── src
+│     ├── Analysis Queries
+│     |    |── Queries.sql
+│     ├── data-import
+│     |    └── import-data.sql
+│     └── tables
+│     |     └──create-tables.sql
+├     |── create-database.sql
+
 ```
 
 ## Setup Instructions
