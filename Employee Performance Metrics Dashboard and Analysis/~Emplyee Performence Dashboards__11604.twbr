@@ -1,0 +1,2639 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='EmplyeePerformenceDashboards' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Data (HR excel file)' inline='true' name='federated.0bta9gc0vlzghd1fq28tq0zrlddp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='HR excel file' name='excel-direct.0gf239y004gj4616s605k0e7iwg1'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/Study/Projects/Data Analytics Projects/Employee Performance Metrics Dashboard and Analysis/clean EXCEL file/HR excel file.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0gf239y004gj4616s605k0e7iwg1' name='Data' table='[Data$]' type='table'>
+          <columns gridOrigin='A1:AH312:no:A1:AH312:0' header='yes' outcome='2'>
+            <column datatype='string' name='Employee_Name' ordinal='0' />
+            <column datatype='integer' name='EmpID' ordinal='1' />
+            <column datatype='integer' name='Salary' ordinal='2' />
+            <column datatype='string' name='Position' ordinal='3' />
+            <column datatype='string' name='State' ordinal='4' />
+            <column datatype='string' name='Zip' ordinal='5' />
+            <column datatype='date' name='DOB' ordinal='6' />
+            <column datatype='string' name='Sex' ordinal='7' />
+            <column datatype='string' name='MaritalDesc' ordinal='8' />
+            <column datatype='string' name='CitizenDesc' ordinal='9' />
+            <column datatype='string' name='HispanicLatino' ordinal='10' />
+            <column datatype='string' name='RaceDesc' ordinal='11' />
+            <column datatype='date' name='DateofHire' ordinal='12' />
+            <column datatype='date' name='DateofTermination' ordinal='13' />
+            <column datatype='string' name='TermReason' ordinal='14' />
+            <column datatype='string' name='EmploymentStatus' ordinal='15' />
+            <column datatype='string' name='Department' ordinal='16' />
+            <column datatype='string' name='ManagerName' ordinal='17' />
+            <column datatype='integer' name='ManagerID' ordinal='18' />
+            <column datatype='string' name='RecruitmentSource' ordinal='19' />
+            <column datatype='string' name='PerformanceScore' ordinal='20' />
+            <column datatype='real' name='EngagementSurvey' ordinal='21' />
+            <column datatype='integer' name='EmpSatisfaction' ordinal='22' />
+            <column datatype='integer' name='SpecialProjectsCount' ordinal='23' />
+            <column datatype='date' name='LastPerformanceReview_Date' ordinal='24' />
+            <column datatype='integer' name='DaysLateLast30' ordinal='25' />
+            <column datatype='integer' name='Absences' ordinal='26' />
+            <column datatype='integer' name='IsTerminated' ordinal='27' />
+            <column datatype='integer' name='AttritionFlag' ordinal='28' />
+            <column datatype='integer' name='Age' ordinal='29' />
+            <column datatype='real' name='Tenure_Years' ordinal='30' />
+            <column datatype='string' name='EngagementLevel' ordinal='31' />
+            <column datatype='string' name='AgeGroup' ordinal='32' />
+            <column datatype='string' name='SalaryBand' ordinal='33' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AH312:no:A1:AH312:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Employee_Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Employee_Name]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Employee_Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmpID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EmpID]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>EmpID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Salary</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Salary]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Salary</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Position</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Position]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Position</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zip</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Zip]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Zip</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DOB</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DOB]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>DOB</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sex]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Sex</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MaritalDesc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[MaritalDesc]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>MaritalDesc</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CitizenDesc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CitizenDesc]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>CitizenDesc</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HispanicLatino</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[HispanicLatino]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>HispanicLatino</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RaceDesc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[RaceDesc]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>RaceDesc</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DateofHire</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DateofHire]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>DateofHire</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DateofTermination</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DateofTermination]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>DateofTermination</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TermReason</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[TermReason]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>TermReason</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmploymentStatus</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[EmploymentStatus]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>EmploymentStatus</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Department</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Department]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Department</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ManagerName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ManagerName]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>ManagerName</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ManagerID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ManagerID]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>ManagerID</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RecruitmentSource</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[RecruitmentSource]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>RecruitmentSource</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PerformanceScore</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[PerformanceScore]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>PerformanceScore</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EngagementSurvey</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EngagementSurvey]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>EngagementSurvey</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmpSatisfaction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EmpSatisfaction]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>EmpSatisfaction</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SpecialProjectsCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SpecialProjectsCount]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>SpecialProjectsCount</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LastPerformanceReview_Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[LastPerformanceReview_Date]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>LastPerformanceReview_Date</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DaysLateLast30</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DaysLateLast30]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>DaysLateLast30</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Absences</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Absences]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Absences</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IsTerminated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IsTerminated]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>IsTerminated</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AttritionFlag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AttritionFlag]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>AttritionFlag</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tenure_Years</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tenure_Years]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Tenure_Years</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EngagementLevel</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[EngagementLevel]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>EngagementLevel</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AgeGroup</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[AgeGroup]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>AgeGroup</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SalaryBand</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[SalaryBand]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>SalaryBand</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data_268A1A8446094F0DABC172D3211A0233]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Age Group' datatype='string' name='[AgeGroup]' role='dimension' type='nominal' />
+      <column caption='Attrition Flag' datatype='integer' name='[AttritionFlag]' role='measure' type='quantitative' />
+      <column caption='Attrition Rate' datatype='real' name='[Calculation_781937525100683266]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([AttritionFlag]) / COUNT([EmpID])' />
+      </column>
+      <column caption='Citizen Desc' datatype='string' name='[CitizenDesc]' role='dimension' type='nominal' />
+      <column caption='Dateof Hire' datatype='date' name='[DateofHire]' role='dimension' type='ordinal' />
+      <column caption='Dateof Termination' datatype='date' name='[DateofTermination]' role='dimension' type='ordinal' />
+      <column aggregation='None' caption='Emp Satisfaction (bin) 2' datatype='integer' name='[Emp Satisfaction (bin) 2]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[EmpSatisfaction]' peg='0' size='1' />
+      </column>
+      <column caption='Emp ID' datatype='integer' name='[EmpID]' role='dimension' type='ordinal' />
+      <column caption='Emp Satisfaction' datatype='integer' name='[EmpSatisfaction]' role='measure' type='quantitative' />
+      <column caption='Employee Name' datatype='string' name='[Employee_Name]' role='dimension' type='nominal' />
+      <column caption='Employment Status' datatype='string' name='[EmploymentStatus]' role='dimension' type='nominal' />
+      <column aggregation='None' caption='Engagement Survey (bin)' datatype='integer' name='[Engagement Survey (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-1' formula='[EngagementSurvey]' peg='0' size='0.5' />
+      </column>
+      <column caption='Engagement Level' datatype='string' name='[EngagementLevel]' role='dimension' type='nominal' />
+      <column caption='Engagement Survey' datatype='real' name='[EngagementSurvey]' role='measure' type='quantitative' />
+      <column caption='Hispanic Latino' datatype='string' name='[HispanicLatino]' role='dimension' type='nominal' />
+      <column caption='Is Terminated' datatype='integer' name='[IsTerminated]' role='measure' type='quantitative' />
+      <column caption='LastPerformanceReview Date' datatype='date' name='[LastPerformanceReview_Date]' role='dimension' type='ordinal' />
+      <column caption='Manager ID' datatype='integer' name='[ManagerID]' role='dimension' type='ordinal' />
+      <column caption='Manager Name' datatype='string' name='[ManagerName]' role='dimension' type='nominal' />
+      <column caption='Marital Desc' datatype='string' name='[MaritalDesc]' role='dimension' type='nominal' />
+      <column caption='Performance Score' datatype='string' name='[PerformanceScore]' role='dimension' type='nominal' />
+      <column caption='Race Desc' datatype='string' name='[RaceDesc]' role='dimension' type='nominal' />
+      <column caption='Recruitment Source' datatype='string' name='[RecruitmentSource]' role='dimension' type='nominal' />
+      <column caption='Salary Band' datatype='string' name='[SalaryBand]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Sex]' role='dimension' type='nominal' />
+      <column caption='Special Projects Count' datatype='integer' name='[SpecialProjectsCount]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Tenure Years' datatype='real' name='[Tenure_Years]' role='measure' type='quantitative' />
+      <column caption='Term Reason' datatype='string' name='[TermReason]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column caption='Data' datatype='table' name='[__tableau_internal_object_id__].[Data_268A1A8446094F0DABC172D3211A0233]' role='measure' type='quantitative' />
+      <column-instance column='[Sex]' derivation='None' name='[none:Sex:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/HASSAN~1/AppData/Local/Temp/TableauTemp/#TableauTemp_1i11cyo1qs5k4a1c8b6ky15ffchv.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Employee_Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Employee_Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Employee_Name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>311</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EmpID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[EmpID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EmpID</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>311</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Salary</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Salary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Salary</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>280</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Position</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Position]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Position</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zip</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Zip]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Zip</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>158</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DOB</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[DOB]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DOB</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Data</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>307</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sex</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sex]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sex</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MaritalDesc</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MaritalDesc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MaritalDesc</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CitizenDesc</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CitizenDesc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CitizenDesc</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HispanicLatino</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[HispanicLatino]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HispanicLatino</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RaceDesc</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[RaceDesc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RaceDesc</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DateofHire</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[DateofHire]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DateofHire</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Data</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>101</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DateofTermination</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[DateofTermination]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DateofTermination</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Data</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>97</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TermReason</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TermReason]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TermReason</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EmploymentStatus</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[EmploymentStatus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EmploymentStatus</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Department</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Department]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Department</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ManagerName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ManagerName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ManagerName</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ManagerID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ManagerID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ManagerID</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RecruitmentSource</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[RecruitmentSource]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RecruitmentSource</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PerformanceScore</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PerformanceScore]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PerformanceScore</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EngagementSurvey</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[EngagementSurvey]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EngagementSurvey</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Data</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>119</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EmpSatisfaction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[EmpSatisfaction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EmpSatisfaction</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SpecialProjectsCount</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SpecialProjectsCount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SpecialProjectsCount</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LastPerformanceReview_Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[LastPerformanceReview_Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LastPerformanceReview_Date</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Data</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>137</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DaysLateLast30</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[DaysLateLast30]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DaysLateLast30</remote-alias>
+              <ordinal>25</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Absences</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Absences]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Absences</remote-alias>
+              <ordinal>26</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IsTerminated</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[IsTerminated]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IsTerminated</remote-alias>
+              <ordinal>27</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AttritionFlag</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[AttritionFlag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AttritionFlag</remote-alias>
+              <ordinal>28</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>29</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tenure_Years</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Tenure_Years]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tenure_Years</remote-alias>
+              <ordinal>30</ordinal>
+              <family>Data</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>110</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EngagementLevel</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[EngagementLevel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EngagementLevel</remote-alias>
+              <ordinal>31</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AgeGroup</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[AgeGroup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AgeGroup</remote-alias>
+              <ordinal>32</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SalaryBand</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SalaryBand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SalaryBand</remote-alias>
+              <ordinal>33</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Sex:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Pakistan&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Data' id='Data_268A1A8446094F0DABC172D3211A0233'>
+            <properties context=''>
+              <relation connection='excel-direct.0gf239y004gj4616s605k0e7iwg1' name='Data' table='[Data$]' type='table'>
+                <columns gridOrigin='A1:AH312:no:A1:AH312:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Employee_Name' ordinal='0' />
+                  <column datatype='integer' name='EmpID' ordinal='1' />
+                  <column datatype='integer' name='Salary' ordinal='2' />
+                  <column datatype='string' name='Position' ordinal='3' />
+                  <column datatype='string' name='State' ordinal='4' />
+                  <column datatype='string' name='Zip' ordinal='5' />
+                  <column datatype='date' name='DOB' ordinal='6' />
+                  <column datatype='string' name='Sex' ordinal='7' />
+                  <column datatype='string' name='MaritalDesc' ordinal='8' />
+                  <column datatype='string' name='CitizenDesc' ordinal='9' />
+                  <column datatype='string' name='HispanicLatino' ordinal='10' />
+                  <column datatype='string' name='RaceDesc' ordinal='11' />
+                  <column datatype='date' name='DateofHire' ordinal='12' />
+                  <column datatype='date' name='DateofTermination' ordinal='13' />
+                  <column datatype='string' name='TermReason' ordinal='14' />
+                  <column datatype='string' name='EmploymentStatus' ordinal='15' />
+                  <column datatype='string' name='Department' ordinal='16' />
+                  <column datatype='string' name='ManagerName' ordinal='17' />
+                  <column datatype='integer' name='ManagerID' ordinal='18' />
+                  <column datatype='string' name='RecruitmentSource' ordinal='19' />
+                  <column datatype='string' name='PerformanceScore' ordinal='20' />
+                  <column datatype='real' name='EngagementSurvey' ordinal='21' />
+                  <column datatype='integer' name='EmpSatisfaction' ordinal='22' />
+                  <column datatype='integer' name='SpecialProjectsCount' ordinal='23' />
+                  <column datatype='date' name='LastPerformanceReview_Date' ordinal='24' />
+                  <column datatype='integer' name='DaysLateLast30' ordinal='25' />
+                  <column datatype='integer' name='Absences' ordinal='26' />
+                  <column datatype='integer' name='IsTerminated' ordinal='27' />
+                  <column datatype='integer' name='AttritionFlag' ordinal='28' />
+                  <column datatype='integer' name='Age' ordinal='29' />
+                  <column datatype='real' name='Tenure_Years' ordinal='30' />
+                  <column datatype='string' name='EngagementLevel' ordinal='31' />
+                  <column datatype='string' name='AgeGroup' ordinal='32' />
+                  <column datatype='string' name='SalaryBand' ordinal='33' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Age Group Distribuition'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>Age Distribuition</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (HR excel file)' name='federated.0bta9gc0vlzghd1fq28tq0zrlddp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bta9gc0vlzghd1fq28tq0zrlddp'>
+            <column caption='Age Group' datatype='string' name='[AgeGroup]' role='dimension' type='nominal' />
+            <column caption='Emp ID' datatype='integer' name='[EmpID]' role='dimension' type='ordinal' />
+            <column-instance column='[EmpID]' derivation='CountD' name='[ctd:EmpID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AgeGroup]' derivation='None' name='[none:AgeGroup:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[ctd:EmpID:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:AgeGroup:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[ctd:EmpID:qk]</rows>
+        <cols>[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:AgeGroup:nk]</cols>
+      </table>
+      <simple-id uuid='{D904FD5A-CB5A-4BE1-886C-C0C9EB2EEDA0}' />
+    </worksheet>
+    <worksheet name='Attrition Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#f28e2b'>Attrition Rate</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (HR excel file)' name='federated.0bta9gc0vlzghd1fq28tq0zrlddp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bta9gc0vlzghd1fq28tq0zrlddp'>
+            <column caption='Attrition Flag' datatype='integer' name='[AttritionFlag]' role='measure' type='quantitative' />
+            <column caption='Attrition Rate' datatype='real' name='[Calculation_781937525100683266]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([AttritionFlag]) / COUNT([EmpID])' />
+            </column>
+            <column caption='Emp ID' datatype='integer' name='[EmpID]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_781937525100683266]' derivation='User' name='[usr:Calculation_781937525100683266:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[usr:Calculation_781937525100683266:qk]' value='p0.00%' />
+            <format attr='color' value='#4e79a7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[usr:Calculation_781937525100683266:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{56A6FA6C-2EFA-4E52-928E-739FF48580C8}' />
+    </worksheet>
+    <worksheet name='Attrition Rate By Department'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#b6992d'>Attrition Rate By Department </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (HR excel file)' name='federated.0bta9gc0vlzghd1fq28tq0zrlddp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bta9gc0vlzghd1fq28tq0zrlddp'>
+            <column caption='Attrition Flag' datatype='integer' name='[AttritionFlag]' role='measure' type='quantitative' />
+            <column caption='Attrition Rate' datatype='real' name='[Calculation_781937525100683266]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([AttritionFlag]) / COUNT([EmpID])' />
+            </column>
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column caption='Emp ID' datatype='integer' name='[EmpID]' role='dimension' type='ordinal' />
+            <column-instance column='[AttritionFlag]' derivation='Avg' name='[avg:AttritionFlag:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Department]' derivation='None' name='[none:Department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_781937525100683266]' derivation='User' name='[usr:Calculation_781937525100683266:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[usr:Calculation_781937525100683266:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[usr:Calculation_781937525100683266:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[avg:AttritionFlag:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[avg:AttritionFlag:qk]' />
+              <text column='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[usr:Calculation_781937525100683266:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[usr:Calculation_781937525100683266:qk]</rows>
+        <cols>[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:Department:nk]</cols>
+      </table>
+      <simple-id uuid='{47012160-EFA5-4147-AC1D-3F4487A90EC5}' />
+    </worksheet>
+    <worksheet name='Average Engagement'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>Average Engagement</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (HR excel file)' name='federated.0bta9gc0vlzghd1fq28tq0zrlddp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bta9gc0vlzghd1fq28tq0zrlddp'>
+            <column caption='Engagement Survey' datatype='real' name='[EngagementSurvey]' role='measure' type='quantitative' />
+            <column-instance column='[EngagementSurvey]' derivation='Avg' name='[avg:EngagementSurvey:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#4e79a7' />
+            <format attr='text-align' data-class='subtotal' scope='rows' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[avg:EngagementSurvey:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.7471270561218262' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{570C48DB-A4EC-4355-9BA3-1E453ECBEA3B}' />
+    </worksheet>
+    <worksheet name='Average Satisfication Score'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>Average Satisfication </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (HR excel file)' name='federated.0bta9gc0vlzghd1fq28tq0zrlddp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bta9gc0vlzghd1fq28tq0zrlddp'>
+            <column caption='Emp Satisfaction' datatype='integer' name='[EmpSatisfaction]' role='measure' type='quantitative' />
+            <column-instance column='[EmpSatisfaction]' derivation='Avg' name='[avg:EmpSatisfaction:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#b07aa1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[avg:EmpSatisfaction:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.8790607452392578' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E0461491-CD1E-4D57-9F5F-939D1D90D8FC}' />
+    </worksheet>
+    <worksheet name='Employee By Department'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>Employee By Department</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (HR excel file)' name='federated.0bta9gc0vlzghd1fq28tq0zrlddp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bta9gc0vlzghd1fq28tq0zrlddp'>
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column caption='Emp ID' datatype='integer' name='[EmpID]' role='dimension' type='ordinal' />
+            <column-instance column='[EmpID]' derivation='CountD' name='[ctd:EmpID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Department]' derivation='None' name='[none:Department:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[ctd:EmpID:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#d37295' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[ctd:EmpID:qk]</rows>
+        <cols>[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:Department:nk]</cols>
+      </table>
+      <simple-id uuid='{80ED37A5-4E6A-491F-AFA6-FFFC5CD3E6F0}' />
+    </worksheet>
+    <worksheet name='Employee Satisfaction vs Employee Engagement'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'> Satisfaction vs Engagement</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (HR excel file)' name='federated.0bta9gc0vlzghd1fq28tq0zrlddp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bta9gc0vlzghd1fq28tq0zrlddp'>
+            <column caption='Attrition Flag' datatype='integer' name='[AttritionFlag]' role='measure' type='quantitative' />
+            <column caption='Emp ID' datatype='integer' name='[EmpID]' role='dimension' type='ordinal' />
+            <column caption='Emp Satisfaction' datatype='integer' name='[EmpSatisfaction]' role='measure' type='quantitative' />
+            <column caption='Engagement Survey' datatype='real' name='[EngagementSurvey]' role='measure' type='quantitative' />
+            <column-instance column='[EmpSatisfaction]' derivation='Avg' name='[avg:EmpSatisfaction:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[EngagementSurvey]' derivation='Avg' name='[avg:EngagementSurvey:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AttritionFlag]' derivation='None' name='[none:AttritionFlag:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[EmpID]' derivation='None' name='[none:EmpID:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[avg:EmpSatisfaction:qk]' scope='cols' value=' Employee Satisfaction' />
+            <format attr='title' class='0' field='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[avg:EngagementSurvey:qk]' scope='rows' value=' Engagement Survey' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:AttritionFlag:qk]' />
+              <lod column='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:EmpID:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/circle' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[avg:EngagementSurvey:qk]</rows>
+        <cols>[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[avg:EmpSatisfaction:qk]</cols>
+      </table>
+      <simple-id uuid='{8C0A57DE-AAF2-4184-B212-E7C30DCFE872}' />
+    </worksheet>
+    <worksheet name='Employee Satisfication By Department'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#606b76' fontsize='12'>Employee Satisfication </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (HR excel file)' name='federated.0bta9gc0vlzghd1fq28tq0zrlddp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bta9gc0vlzghd1fq28tq0zrlddp'>
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Emp Satisfaction (bin) 2' datatype='integer' name='[Emp Satisfaction (bin) 2]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[EmpSatisfaction]' peg='0' size='1' />
+            </column>
+            <column caption='Emp Satisfaction' datatype='integer' name='[EmpSatisfaction]' role='measure' type='quantitative' />
+            <column-instance column='[Department]' derivation='Count' name='[cnt:Department:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Department]' derivation='None' name='[none:Department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Emp Satisfaction (bin) 2]' derivation='None' name='[none:Emp Satisfaction (bin) 2:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[cnt:Department:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:Department:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[cnt:Department:qk]</rows>
+        <cols>[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:Emp Satisfaction (bin) 2:ok]</cols>
+        <show-full-range>
+          <column>[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[Emp Satisfaction (bin) 2]</column>
+          <column>[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[Emp Satisfaction (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{ABE6A666-513B-4BAB-9556-879F073EA8B3}' />
+    </worksheet>
+    <worksheet name='Employee terminatd for what reason and their Performence score'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>Termination reason and their Performence</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (HR excel file)' name='federated.0bta9gc0vlzghd1fq28tq0zrlddp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bta9gc0vlzghd1fq28tq0zrlddp'>
+            <column caption='Attrition Flag' datatype='integer' name='[AttritionFlag]' role='measure' type='quantitative' />
+            <column caption='Performance Score' datatype='string' name='[PerformanceScore]' role='dimension' type='nominal' />
+            <column caption='Term Reason' datatype='string' name='[TermReason]' role='dimension' type='nominal' />
+            <column-instance column='[PerformanceScore]' derivation='None' name='[none:PerformanceScore:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TermReason]' derivation='None' name='[none:TermReason:nk]' pivot='key' type='nominal' />
+            <column-instance column='[AttritionFlag]' derivation='Sum' name='[sum:AttritionFlag:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:TermReason:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:TermReason:nk]' />
+              <groupfilter function='member' level='[none:TermReason:nk]' member='&quot;N/A-StillEmployed&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:TermReason:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[sum:AttritionFlag:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:PerformanceScore:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[sum:AttritionFlag:qk]</rows>
+        <cols>[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:TermReason:nk]</cols>
+      </table>
+      <simple-id uuid='{57E8D8BE-841F-4502-96C0-75AAB1B48280}' />
+    </worksheet>
+    <worksheet name='Engagement By Department'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#9d7660' fontsize='12'>Engagement By Department</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (HR excel file)' name='federated.0bta9gc0vlzghd1fq28tq0zrlddp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bta9gc0vlzghd1fq28tq0zrlddp'>
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Engagement Survey (bin)' datatype='integer' name='[Engagement Survey (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-1' formula='[EngagementSurvey]' peg='0' size='0.5' />
+            </column>
+            <column caption='Engagement Survey' datatype='real' name='[EngagementSurvey]' role='measure' type='quantitative' />
+            <column-instance column='[Department]' derivation='Count' name='[cnt:Department:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Department]' derivation='None' name='[none:Department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Engagement Survey (bin)]' derivation='None' name='[none:Engagement Survey (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[cnt:Department:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:Department:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[cnt:Department:qk]</rows>
+        <cols>[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:Engagement Survey (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[Engagement Survey (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{66D78937-81AB-4126-BC2E-6DDEA2A76DD7}' />
+    </worksheet>
+    <worksheet name='Gender Distribuition'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>Gender Distribuition</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (HR excel file)' name='federated.0bta9gc0vlzghd1fq28tq0zrlddp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bta9gc0vlzghd1fq28tq0zrlddp'>
+            <column caption='Emp ID' datatype='integer' name='[EmpID]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Sex]' role='dimension' type='nominal' />
+            <column-instance column='[EmpID]' derivation='CountD' name='[ctd:EmpID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sex]' derivation='None' name='[none:Sex:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:Sex:nk]' />
+              <size column='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[ctd:EmpID:qk]' />
+              <text column='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:Sex:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='auto' />
+                <format attr='text-align' value='auto' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4832596778869629' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0F0A359E-6D75-47C9-B403-3B008B874C82}' />
+    </worksheet>
+    <worksheet name='Maritial Distribuition'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>Martial Distribuition</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (HR excel file)' name='federated.0bta9gc0vlzghd1fq28tq0zrlddp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bta9gc0vlzghd1fq28tq0zrlddp'>
+            <column caption='Emp ID' datatype='integer' name='[EmpID]' role='dimension' type='ordinal' />
+            <column caption='Marital Desc' datatype='string' name='[MaritalDesc]' role='dimension' type='nominal' />
+            <column-instance column='[EmpID]' derivation='CountD' name='[ctd:EmpID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MaritalDesc]' derivation='None' name='[none:MaritalDesc:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[ctd:EmpID:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:MaritalDesc:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[ctd:EmpID:qk]</rows>
+        <cols>[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:MaritalDesc:nk]</cols>
+      </table>
+      <simple-id uuid='{DE9013E8-715B-4D78-8348-356BFC2F100B}' />
+    </worksheet>
+    <worksheet name='Total Number Of Employee'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>Employees</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (HR excel file)' name='federated.0bta9gc0vlzghd1fq28tq0zrlddp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bta9gc0vlzghd1fq28tq0zrlddp'>
+            <column caption='Emp ID' datatype='integer' name='[EmpID]' role='dimension' type='ordinal' />
+            <column-instance column='[EmpID]' derivation='CountD' name='[ctd:EmpID:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#d37295' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[ctd:EmpID:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='2.1104972362518311' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BF338C02-AAAC-4F53-ABD9-F7EB7AD000B8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97142' id='14' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1429'>
+            <zone h='97142' id='9' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1429'>
+              <zone h='97142' id='7' type-v2='layout-basic' w='48769' x='1231' y='1429'>
+                <zone h='38035' id='3' name='Total Number Of Employee' w='21846' x='1231' y='1429'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='59107' id='5' name='Employee By Department' w='48769' x='1231' y='39464'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='38035' id='6' name='Gender Distribuition' w='26923' x='23077' y='1429'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='317' h='97142' id='15' is-fixed='true' type-v2='layout-basic' w='48769' x='50000' y='1429'>
+                <zone h='48571' id='8' param='vert' type-v2='layout-flow' w='48769' x='50000' y='1429'>
+                  <zone fixed-size='264' h='48571' id='12' is-fixed='true' name='Maritial Distribuition' w='48769' x='50000' y='1429'>
+                    <layout-cache cell-count-w='5' minheight='223' non-cell-size-w='59' type-h='scalable' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='48571' id='16' param='vert' type-v2='layout-flow' w='48769' x='50000' y='50000'>
+                  <zone h='48571' id='11' name='Age Group Distribuition' w='48769' x='50000' y='50000'>
+                    <layout-cache cell-count-w='4' minheight='159' non-cell-size-w='60' type-h='scalable' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='26' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97142' id='25' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1429'>
+                <zone fixed-size='280' h='38035' id='3' is-fixed='true' name='Total Number Of Employee' w='21846' x='1231' y='1429'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38035' id='6' is-fixed='true' name='Gender Distribuition' w='26923' x='23077' y='1429'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48571' id='12' is-fixed='true' name='Maritial Distribuition' w='48769' x='50000' y='1429'>
+                  <layout-cache cell-count-w='5' minheight='223' non-cell-size-w='59' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='59107' id='5' is-fixed='true' name='Employee By Department' w='48769' x='1231' y='39464'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48571' id='11' is-fixed='true' name='Age Group Distribuition' w='48769' x='50000' y='50000'>
+                  <layout-cache cell-count-w='4' minheight='159' non-cell-size-w='60' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{B3163ADA-7C85-4615-95CE-92D781092236}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97142' id='14' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1429'>
+            <zone h='97142' id='11' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1429'>
+              <zone h='97142' id='8' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1429'>
+                <zone h='97142' id='6' type-v2='layout-basic' w='97538' x='1231' y='1429'>
+                  <zone h='16428' id='3' name='Attrition Rate' w='97538' x='1231' y='14822'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='67321' id='5' name='Attrition Rate By Department' w='40000' x='1231' y='31250'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='67321' id='12' name='Employee terminatd for what reason and their Performence score' w='57538' x='41231' y='31250'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='13393' id='15' name='Employee terminatd for what reason and their Performence score' pane-specification-id='0' param='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:PerformanceScore:nk]' type-v2='color' w='97538' x='1231' y='1429'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97142' id='20' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1429'>
+                <zone fixed-size='134' h='16428' id='3' is-fixed='true' name='Attrition Rate' w='97538' x='1231' y='14822'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='67321' id='5' is-fixed='true' name='Attrition Rate By Department' w='40000' x='1231' y='31250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='67321' id='12' is-fixed='true' name='Employee terminatd for what reason and their Performence score' w='57538' x='41231' y='31250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13393' id='15' name='Employee terminatd for what reason and their Performence score' pane-specification-id='0' param='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:PerformanceScore:nk]' type-v2='color' w='97538' x='1231' y='1429'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{30C2C714-A180-431D-B7DB-B896F9A66B55}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97142' id='14' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1429'>
+            <zone h='97142' id='8' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1429'>
+              <zone h='97142' id='6' type-v2='layout-basic' w='97538' x='1231' y='1429'>
+                <zone h='12322' id='3' name='Average Engagement' w='42615' x='1231' y='23035'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='50535' id='5' name='Employee Satisfication By Department' w='42615' x='1231' y='48036'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='12679' id='10' name='Average Satisfication Score' w='42615' x='1231' y='35357'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='50535' id='11' name='Engagement By Department' w='54923' x='43846' y='48036'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='21606' id='9' name='Employee Satisfication By Department' pane-specification-id='0' param='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:Department:nk]' type-v2='color' w='42615' x='1231' y='1429'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='46607' id='12' name='Employee Satisfaction vs Employee Engagement' w='54923' x='43846' y='1429'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1200' minheight='1200' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97142' id='19' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1429'>
+                <zone fixed-size='280' h='48571' id='12' is-fixed='true' name='Employee Satisfaction vs Employee Engagement' w='54923' x='43846' y='1429'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='106' h='13214' id='3' is-fixed='true' name='Average Engagement' w='42615' x='1231' y='23035'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='110' h='13751' id='10' is-fixed='true' name='Average Satisfication Score' w='42615' x='1231' y='36249'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48571' id='5' is-fixed='true' name='Employee Satisfication By Department' w='42615' x='1231' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='21606' id='9' name='Employee Satisfication By Department' pane-specification-id='0' param='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:Department:nk]' type-v2='color' w='42615' x='1231' y='1429'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48571' id='11' is-fixed='true' name='Engagement By Department' w='54923' x='43846' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F7CD3934-EBEB-4588-B913-99807869C4A3}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Total Number Of Employee'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DB9A8109-B517-4C98-91E1-095E250FFFB5}' />
+    </window>
+    <window class='worksheet' name='Employee By Department'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{FE5ED863-E707-4C21-BBA6-828A342B8C3E}' />
+    </window>
+    <window class='worksheet' name='Gender Distribuition'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:Sex:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[ctd:EmpID:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{13C35DB1-B1C3-4E72-A09E-8F6C35784BAA}' />
+    </window>
+    <window class='worksheet' name='Age Group Distribuition'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='160'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:AgeGroup:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FBE650E1-9111-44C4-830A-AB197A37AE22}' />
+    </window>
+    <window class='worksheet' name='Maritial Distribuition'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:MaritalDesc:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{641A0DB3-4AC4-4554-839A-42767FEF970C}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Age Group Distribuition'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Employee By Department'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Gender Distribuition'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Maritial Distribuition'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Number Of Employee'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{6540740C-40D6-4255-A265-AB3A647C8477}' />
+    </window>
+    <window class='worksheet' name='Attrition Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AEB5B175-2219-4D3C-BAEC-9DA93DD8151B}' />
+    </window>
+    <window class='worksheet' name='Attrition Rate By Department'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[avg:AttritionFlag:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{714397AE-1B8A-4D91-8C1A-A4959CDC190C}' />
+    </window>
+    <window class='worksheet' name='Engagement By Department'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:Department:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A3203C4E-7E77-4AC4-8018-CEAC797327CA}' />
+    </window>
+    <window class='worksheet' name='Average Engagement'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6343A167-8B71-4779-B77F-A85C3E34DC65}' />
+    </window>
+    <window class='worksheet' name='Employee Satisfication By Department'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:Department:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FCF66540-D8E7-446D-94E6-7B878D3F106A}' />
+    </window>
+    <window class='worksheet' name='Average Satisfication Score'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7B751046-9DCA-4D3F-948F-F3E12EBF5BCE}' />
+    </window>
+    <window class='worksheet' name='Employee Satisfaction vs Employee Engagement'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:AttritionFlag:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1A78A003-1062-4EAC-9D05-2CD03734DF38}' />
+    </window>
+    <window class='worksheet' name='Employee terminatd for what reason and their Performence score'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0bta9gc0vlzghd1fq28tq0zrlddp].[none:PerformanceScore:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7C7047D6-843E-4016-899C-346C0BE11345}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Attrition Rate'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Attrition Rate By Department'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Employee terminatd for what reason and their Performence score'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{EE590B60-1633-4FD0-8991-BC9AA15E21BA}' />
+    </window>
+    <window class='dashboard' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='Average Engagement'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Average Satisfication Score'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Employee Satisfaction vs Employee Engagement'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Employee Satisfication By Department'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Engagement By Department'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{E9D58DEA-DAAD-4B3F-8AF7-3903C55A89B2}' />
+    </window>
+  </windows>
+</workbook>
