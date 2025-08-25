@@ -1,43 +1,48 @@
-<details> <summary>📄 Click to Expand README Content</summary>
+# Customer Purchase Analysis SQL Project
 
-# Customer Purchase Trends Analysis
+This project is designed to set up a database named **Customer_Purchase_Analysis** for analyzing customer purchase data. It includes SQL scripts for creating the database, defining the necessary tables, and importing data from CSV files.
 
-This project analyzes customer purchasing behavior based on product reviews, browsing patterns, and historical purchase data. It focuses on data cleaning and exploratory analysis to uncover key business insights.
+## Project Structure
 
-## 🔍 Project Goals
-
-- Understand customer buying behavior
-- Identify product interest patterns
-- Correlate browsing history with purchases
-- Clean and structure data for deeper insights
-
-## 📁 Project Structure
-
+```
 customer purchase analysis/
+├── Customer Purchase  Analysis.xlxs
+├── Clean Files/
+│ ├── Cleaned_Browsing_History.xlsx
+│ ├── Cleaned_Product_Reviews.xlsx
+│ └── Cleaned_Purchase_History.xlsx
+├── Customer Purchase  Analysis.twb
+├── Cleaned_Browsing_History.csv
+├── Cleaned_Product_Reviews.csv
+├── Cleaned_Purchase_History.csv
 ├── CustomerData.csv
-├── Clean FIles/
-│ ├── Cleaned_Browsing_History.csv
-│ ├── Cleaned_Product_Reviews.csv
-│ ├── Cleaned_Purchase_History.csv
+├── SQL Files/
+|  ├── src
+│     ├── Analysis Queries
+│     |    |── Queries.sql
+│     ├── data-import
+│     |    └── import-data.sql
+│     └── tables
+│     |     └──create-tables.sql
+├     |── create-database.sql
 
+```
 
-## ⚙️ Tools & Technologies
+## Setup Instructions
 
-- Python (Pandas)
-- Excel (initial cleaning)
-- Manual parsing and formatting
+1. **Create the Database**
+   - Open the `create-database.sql` file located in the `src` directory.
+   - Execute the SQL commands to create the **Customer_Purchase_Analysis** database.
 
-## 📊 Key Takeaways
+2. **Create Tables**
+   - Navigate to the `src/tables/create-tables.sql` file.
+   - Run the SQL statements to create the necessary tables for storing customer and purchase data.
 
-- Frequent browsing correlates strongly with purchases
-- Positive reviews lead to higher repurchase likelihood
-- Cleaned datasets are ready for ML model integration
+3. **Import Data**
+   - Open the `src/data-import/import-purchase-history.sql` file.
+   - Ensure that the CSV file path in the script is correct.
+   - Execute the BULK INSERT command to import data into the **PurchaseHistory** table.
 
----
-
-## 👨‍💻 Author
-
-- **Hassan Javed**
-- [GitHub Profile](https://github.com/HassanF22605018)
-
-</details>
+## Notes
+- Ensure that you have the necessary permissions to create databases and tables in your SQL environment.
+- Modify the file paths in the import script as needed to match your local setup.
